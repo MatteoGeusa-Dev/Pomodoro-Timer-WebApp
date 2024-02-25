@@ -3,6 +3,24 @@ html{
     font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+@media only screen and (max-width: 1400px) {
+    .gridcontent{
+        flex-direction: column-reverse;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        min-width: auto;
+    }
+
+    .containersettings{
+        height: 230px;
+    }
+
+  }
+  
+
 body{
     background-color: #ebebeb;
 }
@@ -11,7 +29,6 @@ body{
     display: flex;
     justify-content: center;
     max-width: 600px;
-    min-width: 600px;
     background-color: #fff;
     margin: 20px auto;
     text-align: center;
@@ -31,12 +48,13 @@ p{
     border-radius: 20px;
     font-size: 19px;
     font-weight: 500;
-    margin: 7px;
-    padding: 5px;
+    padding: 15px;
+    margin: 0;
 }
 
 hr{
-    margin:10;
+    margin-top:5px;
+    margin-bottom: 15px;
     max-width: 60%;
 }
 
@@ -54,7 +72,7 @@ hr{
 .container{
     font-size: 19px;
     font-weight: 500;
-    min-width: 1000px;
+    min-width: 60%;
     background-color: #fff;
     margin: 10px auto;
     text-align: center;
@@ -168,7 +186,7 @@ hr{
 }
 
 .gridcontent{
-    display: flex;
+    display: flex;    
     justify-content:space-between;
 }
 
