@@ -18,6 +18,14 @@ html{
         height: 230px;
     }
 
+    .csstimer{
+        background-color: rgb(255, 148, 34);
+        border-radius: 10px;
+        padding: 5px;
+        min-width: 70px;
+        width: 200px;
+    }
+
   }
   
 
@@ -169,7 +177,7 @@ hr{
     border-radius: 10px;
     padding: 5px;
     min-width: 70px;
-    width: 300px;
+    width: 200px;
 }
 
 
