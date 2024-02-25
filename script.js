@@ -63,7 +63,7 @@ function startTimer() {
             minutes_label.textContent = (minutes < 10 ? "0" + minutes : minutes);
             seconds_label.textContent = (seconds < 10 ? "0" + seconds : seconds);
         }
-    }, 10);
+    }, 1000);
 }
 
 function pauseTimer() {
