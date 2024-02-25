@@ -37,6 +37,7 @@ function setupTimer() {
 
 
 function startTimer() {
+    var audio = document.getElementById("audio"); 
     btnpause.disabled = false;
     btnstart.disabled = true;
     minutes_label.contentEditable = false;
@@ -50,6 +51,7 @@ function startTimer() {
         if (minutes === 0 && seconds === 0) {
             clearInterval(timerInterval);
             openPopup();
+            audio.play();
         } else {
             if (seconds === 0) {
                 minutes--;
@@ -61,7 +63,7 @@ function startTimer() {
             minutes_label.textContent = (minutes < 10 ? "0" + minutes : minutes);
             seconds_label.textContent = (seconds < 10 ? "0" + seconds : seconds);
         }
-    }, 1000);
+    }, 10);
 }
 
 function pauseTimer() {
@@ -79,13 +81,20 @@ function stopTimer(){
     setupTimer();
 }
 
+function startPause(){
+    pauseTimer();
+    minutes = 5;
+    seconds = 0;
+    setupTimer();
+}
+
 function openPopup() {
     var popup = document.getElementById("popup");
     popup.style.display = "block";
 }
 
 function closePopup() {
-    stopTimer();
+    startPause()
     var popup = document.getElementById("popup");
     popup.style.display = "none";
 }
