@@ -80,12 +80,60 @@ hr{
     border-radius: 10px;
 }
 
+.containersettings h3{
+    margin: 0;
+
+}
+
+.autotimer{
+    background-color: rgb(255, 148, 34);
+    width:fit-content ;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.autotimer2{
+    background-color: rgb(255, 211, 163);
+    width:fit-content ;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.checkboxautotimer{
+    margin-bottom: 10px;
+}
+
+.inputminutesettings{
+    width: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+.buttonsettings{
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 70px;
+}
+
+.minutessettingscss{
+    background-color: rgb(255, 148, 34);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 30px;
+    width: 10px;
+}
+
 .containersettings{
     min-width: 400px;
     background-color: #fff;
     margin: 10px auto;
     text-align: center;
     border-radius: 10px;
+    height: fit-content;
+    padding: 20px;
 }
 
 /* CSS */
