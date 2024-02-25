@@ -28,12 +28,16 @@ body{
 }
 
 p{
-    background-color: #ffe1c4;
     border-radius: 20px;
     font-size: 19px;
     font-weight: 500;
     margin: 7px;
     padding: 5px;
+}
+
+hr{
+    margin:10;
+    max-width: 60%;
 }
 
 .buttoncontainer{
